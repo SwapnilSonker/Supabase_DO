@@ -65,6 +65,10 @@ function App() {
         <button type="submit" disabled={country.name.length == 0 ? true : false}>
           createUser
         </button>
+        <input type="text" placeholder="edit country name" name="name"/>
+        <button type="submit" disabled={country.name.length == 0 ? true : false}>
+          Edit
+        </button>
       </form>
       <div>
         <ul>
@@ -74,6 +78,10 @@ function App() {
                 <li key={country.id}>{country?.name}</li>
                 <button type="submit" onClick={() => {deleteUser(country.id)}}>
                   delete
+                </button>
+
+                <button type="submit" onClick={() => {UpdateUser(country.id)}}>
+                  Edit
                 </button>
               </div>
             </>
