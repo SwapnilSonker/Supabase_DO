@@ -65,7 +65,9 @@ function App() {
         <button type="submit" disabled={country.name.length == 0 ? true : false}>
           createUser
         </button>
-        <input type="text" placeholder="edit country name" name="name"/>
+      </form>
+      <form onSubmit={createUser()}>
+      <input type="text" placeholder="edit country name" name="name" onChange={handlecountryName} defaultValue={country.name}/>
         <button type="submit" disabled={country.name.length == 0 ? true : false}>
           Edit
         </button>

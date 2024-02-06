@@ -35,6 +35,8 @@
 
 .card {
   padding: 2em;
+  margin:auto;
+  height:100%
 }
 
 .read-the-docs {
@@ -44,4 +46,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 2;
+  flex-direction: column;
 }
